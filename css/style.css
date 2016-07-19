@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Helvetica Neue';
-	src: url('../font/HelveticaNeue.eot');
-	src: url('../font/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
-	url('../font/HelveticaNeue.woff2') format('woff2'),
-	url('../font/HelveticaNeue.woff') format('woff'),
-	url('../font/HelveticaNeue.ttf') format('truetype');
+	src: url('../fonts/helveticaneue-thin-webfont.eot');
+	src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+	url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+	url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -18,6 +18,8 @@ html, body{
 	font-family: 'Helvetica Neue', Tahoma, sans-selif;
 } 
  /*heder*/
+.menu li {padding: 0;
+margin: 0;}
 
  header {
 	background: url("../img/bg_nav.png")   ;
@@ -27,7 +29,8 @@ html, body{
 header ul {
 	float: right;
 	font-size: 0;
-}
+	}
+
 header ul:first-child {
 	margin-right: 20px;
 }
@@ -35,9 +38,16 @@ header ul li {
 	display: inline-block;
 	padding: 11px 10px;
 }
-header ul.menu li{
-	padding: 11px 15px;
+.menu li{
+	 
 }
+.menu a{
+	display: block;
+	padding: 11px 15px;
+	text-decoration: none;
+	color: #60b5ed;
+}
+
 header ul a,
 header ul li {
 	font-family: "Helvetica Neue Regular";
@@ -60,8 +70,9 @@ ul:first-child li:first-child:hover {
 	background: #4eabda url("../img/flag.png") 
     no-repeat 12px 4px;
 }
-ul a li:hover {
+ul a:hover {
 	background: #4eabda;
+	color: white;
 }
 
 /*form*/
@@ -81,6 +92,7 @@ ul a li:hover {
 	font-size: 24px;
 	text-align: center;
 	color: white;
+	font-weight: bold;
 }
 .form_main{
 	display: block;
@@ -138,6 +150,8 @@ ul a li:hover {
 	font-size: 14px;
 	color: white;
 }
+.button:hover {background-image: linear-gradient(to top, #2d4, #67dfff);  }
+
 .footer{
 	width: 560px;
 	line-height: 16px;
